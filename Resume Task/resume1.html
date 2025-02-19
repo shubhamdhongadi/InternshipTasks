@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+.resume-container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 40px;
+    background-color: white;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+    gap: 30px;
+}
+
+
+.header-content {
+    flex-grow: 1;
+}
+
+h1 {
+    font-size: 2.5em;
+    color: #2c3e50;
+    margin-bottom: 5px;
+}
+
+.title {
+    font-size: 1.3em;
+    color: #7f8c8d;
+    margin-bottom: 15px;
+}
+
+.contact-info {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    font-size: 0.9em;
+}
+
+.section {
+    margin-bottom: 30px;
+}
+
+h2 {
+    color: #2c3e50;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+h3 {
+    color: #34495e;
+    margin-bottom: 5px;
+}
+
+.intern{
+    color: #7f8c8d
+}
+
+.date {
+    color: #7f8c8d;
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+ul {
+    padding-left: 20px;
+    margin-bottom: 15px;
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skill {
+    background-color: #3498db;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 15px;
+    font-size: 0.9em;
+}
+
+@media (max-width: 600px) {
+    .header {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .contact-info {
+        justify-content: center;
+    }
+    
+    .resume-container {
+        padding: 20px;
+        margin: 20px;
+    }
+}
+    </style>
+    <title>Resume</title>
+</head>
+<body>
+    <div class="resume-container">
+        <header class="header">
+            
+            <div class="header-content">
+                <h1>Shubham Dhongadi</h1>
+                <p class="title">MERN Stack Developer</p>
+                <div class="contact-info">
+                    <p>📧 shubhamdhongado119@gmail.com</p>
+                    <p>📱 8669450251</p>
+                    <p>📍 Nagpur, Maharashtra</p>
+                </div>
+            </div>
+        </header>
+
+        <section class="section">
+            <h2>Summary</h2>
+            <p>Innovative software engineer skilled in programming, problem-solving, and scalable software design. Proficient in various languages and development tools, with a focus on efficiency and maintainability. Passionate about emerging technology and cross-functional collaboration to deliver cutting edge solutions.</p>
+        </section>
+
+        <section class="section">
+            <h2>Internships</h2>
+            <div class="experience-item">
+                <h3>CODTECH IT Solutions</h3>
+                <h4 class="intern">Frontend Web Developer Intern</h4>
+                <p class="date">June 2024 - July 2024</p>
+                <ul>
+                    <li>Interactive Quiz Application</li>
+                    <li>Portfolio Building</li>
+                    <li>Technologies used: HTML, CSS, JavaScript</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Education</h2>
+            <div class="education-item">
+                <h3>Bachelor of Science in Computer Science</h3>
+                <p>G.H. Raisoni University, Amravati | 2022-2025</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Skills</h2>
+            <div class="skills-container">
+                <span class="skill">HTML</span>
+                <span class="skill">CSS</span>
+                <span class="skill">JavaScript</span>
+                <span class="skill">Python</span>
+                <span class="skill">React</span>
+                <span class="skill">Node.js</span>
+                <span class="skill">SQL</span>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
