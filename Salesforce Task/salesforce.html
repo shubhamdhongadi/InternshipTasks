@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Salesforce Developer Edition Signup</title>
+  <link rel="shortcut icon" href="logo214.svg" type="image/x-icon">
+  <style>
+    body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #2c1ad3;
+  display: flex;
+  justify-content:center;
+  align-items:center;
+  min-height: 100vh;
+
+}
+
+.container {
+  display: flex;
+  background-color: white;
+  max-width: 600px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+ 
+}
+
+.logo {
+  text-align: center;
+
+}
+
+img {
+  width: 100px;
+  height: 100px;
+}
+
+.right-section {
+  flex: 1;
+  padding: 40px;
+}
+
+h2 {
+  text-align: center;
+  font-size: 19px;
+  color: #0e0759;
+}
+
+p {
+  text-align: center;
+}
+
+.info {
+  padding: 20px 10px;
+  background-color: #e3dede;
+  border-radius: 5px;
+}
+
+label {
+  font-size: 12px;
+}
+
+.signup-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.signup-form input,
+.signup-form select {
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.signup-form .name-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.signup-form .name-row input {
+  flex: 1;
+}
+
+.signup-btn {
+  background-color: #0176d3;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.login-link {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.terms {
+  font-size: 0.8em;
+  color: #666;
+  margin-top: 10px;
+}
+  </style>
+
+</head>
+
+<body>
+  <div class="container">
+    <div class="right-section">
+      <div class="logo">
+        <img src="logo214.svg">
+      </div>
+      <h2>Sign up for your Salesforce Developer Edition</h2>
+      <p>A Salesforce Platform environment for free.</p>
+      <p class="info">Complete the form to get access to the Salesforce Developer Edition.</p>
+      <form class="signup-form">
+        <div class="name-row">
+          <div style="display: flex; flex-direction: column;">
+            <label for="fname">First Name*</label>
+            <input type="text" placeholder="First Name" size="30" required>
+          </div>
+          <div style="display: flex; flex-direction: column;">
+            <label for="lname">Last Name*</label>
+            <input type="text" placeholder="Last Name" size="30" required>
+          </div>
+        </div>
+        <label for="email">Email*</label>
+        <input type="email" placeholder="Email" required>
+        <label for="job">Role*</label>
+        <select required>
+          <option value="">Your role</option>
+          <option>Developer</option>
+          <option>IT Support</option>
+          <option>Tech Lead</option>
+        </select>
+        <label for="company">Company*</label>
+        <input type="text" placeholder="Company" required>
+        <label for="country">Country/Region*</label>
+        <select required>
+          <option value="">Country/Region</option>
+          <option>United States</option>
+          <option>Canada</option>
+          <option>United Kingdom</option>
+        </select>
+        <label for="pincode">Postal Code*</label>
+        <input type="text" placeholder="Postal Code" required>
+        <label for="uname">Username*</label>
+        <input type="text" placeholder="Username" required>
+        <button type="submit" class="signup-btn">Sign Up</button>
+        <div class="terms">
+          Your username must be in the form of an email address (it does not have to be real). It must be unique and
+          cannot be associated with another Salesforce login credential. Read more about username recommendations.
+        </div>
+        <div class="login-link">
+          Already have a Salesforce Developer Environment? <a href="https://login.salesforce.com/?locale=in">Log in</a>
+        </div>
+      </form>
+    </div>
+  </div>
+</body>
+
+</html>
