@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modified Layout with Float</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ecf0f1;
+        }
+        #header, #footer {
+            background-color: #1abc9c;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        #container {
+            background-color: #bdc3c7;
+            padding: 20px;
+            overflow: hidden; /* To clear floats */
+        }
+        #div1 {
+            background-color: lightsalmon;
+            padding: 30px;
+            margin-bottom: 20px;
+            width: 100%;
+            box-sizing: border-box;
+            text-align: center;
+            color: black;
+        }
+        #div2 {
+            background-color: pink;
+            padding: 25px;
+            width: 220px;
+            float: right;
+            margin-bottom: 20px;
+            text-align: center;
+            color: black;
+        }
+        #div3 {
+            background-color:  greenyellow;
+            padding: 30px;
+            margin-top: 20px;
+            clear: both;
+            text-align: center;
+            color: black;
+        }
+        #div4 {
+            background-color: lightblue;
+            padding: 30px;
+            margin-top: 20px;
+            text-align: center;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="header">This is the Header</div>
+
+    <div id="container">
+        <div id="div1">
+            Div 1 <br>
+            This is a sample paragraph with black text.
+        </div>
+        <div id="div2">
+            Div 2 <br>
+            This is another sample paragraph.
+        </div>
+        <div id="div3">
+            Div 3 <br>
+            More sample content in the third section.
+        </div>
+        <div id="div4">
+            Div 4 <br>
+            This is the last section with black text.
+        </div>
+    </div>
+
+    <div id="footer">This is the Footer</div>
+
+</body>
+</html>

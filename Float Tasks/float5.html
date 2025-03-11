@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Updated Float Layout</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Verdana', sans-serif;
+            background-color: #f8f9fa;
+        }
+        #header, #footer {
+            background-color: #1abc9c;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        #container {
+            background-color: #ecf0f1;
+            padding: 20px;
+            overflow: hidden;
+        }
+        #div-1 {
+            background-color: lightsalmon;
+            padding: 20px;
+            width: 40%;
+            float: left;
+            margin-right: 20px;
+            color: black;
+            text-align: center;
+        }
+        #div-2 {
+            background-color: pink;
+            padding: 20px;
+            width: 100%;
+            margin-top: 20px;
+            color: black;
+            text-align: center;
+        }
+        #div-3 {
+            background-color:  greenyellow;
+            padding: 20px;
+            width: 30%;
+            float: right;
+            margin-top: 20px;
+            color: black;
+            text-align: center;
+        }
+        #div-4 {
+            background-color: lightblue;
+            padding: 20px;
+            width: 58%;
+            float: left;
+            margin-top: 20px;
+            color: black;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="header">This is the Header Section</div>
+
+    <div id="container">
+        <div id="div-1">
+            Section 1 <br>
+            Sample content with a unique design.
+        </div>
+        <div id="div-2">
+            Section 2 <br>
+            Full-width section with black text.
+        </div>
+        <div id="div-4">
+            Section 3 <br>
+            Another content block with black text.
+        </div>
+        <div id="div-3">
+            Section 4 <br>
+            Right-aligned content with black text.
+        </div>
+    </div>
+
+    <div id="footer">This is the Footer Section</div>
+
+</body>
+</html>

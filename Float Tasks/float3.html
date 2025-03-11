@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Layout</title>
+    <style>
+        body {
+            font-family: 'Verdana', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        #header, #footer {
+            background-color: #1abc9c;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+        #container {
+            background-color: #ecf0f1;
+            padding: 20px;
+            overflow: hidden;
+        }
+        #div1 {
+            background-color: lightsalmon;
+            padding: 25px;
+            width: 100%;
+            box-sizing: border-box;
+            margin-bottom: 15px;
+            color: black;
+            text-align: center;
+        }
+        #div2 {
+            background-color: pink;
+            padding: 20px;
+            width: 30%;
+            float: left;
+            margin-right: 10px;
+            margin-bottom: 15px;
+            color: black;
+            text-align: center;
+        }
+        #div3 {
+            background-color:  greenyellow;
+            padding: 25px;
+            width: 65%;
+            float: left;
+            margin-bottom: 15px;
+            color: black;
+            text-align: center;
+        }
+        #div4 {
+            background-color: lightblue;
+            padding: 25px;
+            width: 100%;
+            color: black;
+            text-align: center;
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="header">Header Section</div>
+
+    <div id="container">
+        <div id="div1">
+            Section 1 <br>
+            This is a sample paragraph with centered black text.
+        </div>
+        <div id="div3">
+            Section 2 <br>
+            This is another paragraph, also centered and black.
+        </div>
+        <div id="div2">
+            Section 3 <br>
+            This section floats left, but still has black text.
+        </div>
+        <div id="div4">
+            Section 4 <br>
+            Final section with the same style applied.
+        </div>
+    </div>
+
+    <div id="footer">Footer Content & Info.</div>
+
+</body>
+</html>
