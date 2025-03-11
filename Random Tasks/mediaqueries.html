@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Design Media Queries</title>
+    <style>
+        body {
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #e5f6e5; 
+            font-family: 'Arial', sans-serif;
+        }
+
+        .container {
+            text-align: left; 
+            padding: 25px;
+            background-color: burlywood; 
+            color: #333; 
+            border-radius: 12px;
+            width: 90%; 
+            max-width: 400px; 
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            font-size: 1.8rem; 
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+
+        p {
+            font-size: 1rem;
+            line-height: 1.6;
+        }
+
+        @media (max-width: 360px) {
+            .container {
+                padding: 20px;
+                font-size: 14px;
+            }
+
+            h1 {
+                font-size: 1.5rem;
+            }
+        }
+
+        
+        @media (min-width: 361px) {
+            .container {
+                padding: 30px;
+                font-size: 16px;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Responsive Design with Media Queries</h1>
+        <p>Resize the browser window to see the text alignment, background color, and font size change dynamically.</p>
+    </div>
+</body>
+</html>
