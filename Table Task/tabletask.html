@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Table Task</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      line-height: 1.6;
+      color: #333;
+
+      justify-content: center;
+    }
+
+    .box {
+      margin: 20px;
+
+      width: 50%;
+      height: 300px;
+      
+      border-radius: 10px;
+      float: right;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .box2{
+      margin-top: 40px;
+    }
+
+
+    tr,
+    th,
+    td {
+      
+      border: 1px solid black;
+      padding: 5px;
+    }
+  </style>
+</head>
+
+<body>
+<center>
+  <div class="box">
+
+    <table style="border: 1px solid black;">
+      <tr style="background-color: rgb(22, 224, 224);">
+        <th>Device</th>
+        <th>Brand</th>
+        <th colspan="2">Specifications</th>
+      </tr>
+      <tr>
+        <td rowspan="3">Smartphone</td>
+        <td rowspan="3">Apple</td>
+        <td style="background-color: rgb(255, 170, 0);">Model</td>
+        <td style="background-color: rgb(255, 170, 0);">Storage</td>
+      </tr>
+      <tr>
+        <td>iPhone 16 pro</td>
+        <td>1TB</td>
+      </tr>
+      <tr>
+        <td>iPhone 16</td>
+        <td>512GB</td>
+      </tr>
+      <tr>
+        <td>Laptop</td>
+        <td>Asus</td>
+        <td colspan="2">15.6" Display</td>
+      </tr>
+      <tr>
+        <td>Tablet</td>
+        <td>iPad Air</td>
+        <td colspan="2">10.5" Display</td>
+      </tr>
+    </table>
+
+  </div>
+</center>
+
+<center>
+  <div class="box2">
+    <table style="border: 8px solid grey;">
+      <tr>
+        <th> </th>
+        <th>Monday</th>
+        <th>Tuesday</th>
+        <th>Wednesday</th>
+        <th>Thursday</th>
+        <th>Friday</th>
+      </tr>
+      <tr>
+        <td>1.00pm</td>
+        <td rowspan="2" style="background-color: sandybrown;">Office</td>
+        <td></td>
+        <td rowspan="2" style="background-color:sandybrown ;">Office</td>
+        <td rowspan="8" style="background-color:sandybrown ;">Office Hours by Appt</td>
+        <td rowspan="2" style="background-color:sandybrown;">Office</td>
+      </tr>
+      <tr>
+        <td>1.30pm</td>
+        <td rowspan="2" style="background-color: grey;">Dept Meeting</td>
+      </tr>
+      <tr>
+        <td>2.00pm</td>
+        <td rowspan="3" style="background-color: rgb(18, 204, 18);">MAT 108</td>
+        <td rowspan="3" style="background-color: rgb(18, 204, 18);">MAT 108</td>
+        <td rowspan="3" style="background-color: rgb(18, 204, 18);">MAT 108</td>
+      </tr>
+      <tr>
+        <td>2.30pm</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>3.00pm</td>
+        <td rowspan="3" style="background-color: grey;">EC Meeting</td>
+      </tr>
+      <tr>
+        <td>3.30pm</td>
+        <td rowspan="3" style="background-color: rgb(154, 51, 251);">CSC 205</td>
+        <td rowspan="3" style="background-color: rgb(154, 51, 251);">CSC 205</td>
+        <td rowspan="3" style="background-color: rgb(154, 51, 251);">CSC 205</td>
+      </tr>
+      <tr>
+        <td>4.00pm</td>
+      </tr>
+      <tr>
+        <td>4.30pm</td>
+        <td></td>
+      </tr>
+    </table>
+
+  </div>
+</center>
+</body>
+
+</html>
